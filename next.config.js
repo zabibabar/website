@@ -2,7 +2,9 @@
 const nextConfig = {
   output: "export",
   basePath: "/website",
-  unoptimized: true,
+  images: {
+    unoptimized: true,
+  },
   experimental: {
     appDir: true,
   },
