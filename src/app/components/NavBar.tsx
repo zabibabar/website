@@ -146,7 +146,7 @@ export default function NavBar() {
             <Button
               endIcon={<LaunchIcon />}
               component={Link}
-              href="https://drive.google.com/file/d/1Ok5iM4ZGeoAQZkGEsHJsn1hy2MHzOPYX/view"
+              href="https://drive.google.com/file/d/1DZJW9re-BgJOYiLJAuOiXTyqL_QgLdXS/view"
               target="_blank"
               rel="noopener"
               sx={{
