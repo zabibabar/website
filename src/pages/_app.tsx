@@ -7,6 +7,7 @@ import { CacheProvider, EmotionCache } from "@emotion/react";
 import theme from "../app/theme";
 import createEmotionCache from "../app/createEmotionCache";
 import Layout from "@/app/components/Layout";
+import Script from "next/script";
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -22,6 +23,20 @@ export default function MyApp(props: MyAppProps) {
         <title>Zabi Babar</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-M57VZL1QHT"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-M57VZL1QHT');
+        `}
+      </Script>
+
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
