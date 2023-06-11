@@ -15,7 +15,7 @@ type NextPageWithLayout = NextPage & {
   getLayout?: (page: React.ReactElement) => React.JSX.Element;
 };
 
-type MyAppProps = AppProps & {
+export type MyAppProps = AppProps & {
   Component: NextPageWithLayout;
   emotionCache?: EmotionCache;
 };
