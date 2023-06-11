@@ -6,21 +6,27 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { CacheProvider, EmotionCache } from "@emotion/react";
 import theme from "../app/theme";
 import createEmotionCache from "../app/createEmotionCache";
-import Layout from "@/app/components/Layout";
 import Script from "next/script";
+import { NextPage } from "next";
 
 const clientSideEmotionCache = createEmotionCache();
 
-export interface MyAppProps extends AppProps {
+type NextPageWithLayout = NextPage & {
+  getLayout?: (page: React.ReactElement) => React.JSX.Element;
+};
+
+type MyAppProps = AppProps & {
+  Component: NextPageWithLayout;
   emotionCache?: EmotionCache;
-}
+};
 
 export default function MyApp(props: MyAppProps) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
+  const getLayout = Component.getLayout || ((page) => page);
+
   return (
     <CacheProvider value={emotionCache}>
       <Head>
-        <title>Zabi Babar</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <Script
@@ -40,9 +46,7 @@ export default function MyApp(props: MyAppProps) {
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        {getLayout(<Component {...pageProps} />)}
       </ThemeProvider>
     </CacheProvider>
   );

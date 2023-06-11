@@ -1,6 +1,7 @@
 import * as React from "react";
 import Link from "@/app/components/Link";
 import Section from "@/app/components/Section";
+import Layout from "@/app/components/Layout";
 
 export default function Home() {
   return (
@@ -31,3 +32,7 @@ export default function Home() {
     </Section>
   );
 }
+
+Home.getLayout = function getLayout(page: React.ReactElement) {
+  return <Layout title="Zabi Babar">{page}</Layout>;
+};

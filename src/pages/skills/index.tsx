@@ -4,6 +4,7 @@ import Card, { CardProps } from "@/app/components/Card";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import { Box } from "@mui/material";
 import profile from "@/app/profile";
+import Layout from "@/app/components/Layout";
 
 export default function Skills({
   skills = [],
@@ -30,4 +31,8 @@ export const getStaticProps: GetStaticProps<{
 }> = () => {
   const { skills } = profile;
   return { props: { skills } };
+};
+
+Skills.getLayout = function getLayout(page: React.ReactElement) {
+  return <Layout title="Skills">{page}</Layout>;
 };

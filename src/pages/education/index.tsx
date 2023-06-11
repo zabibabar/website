@@ -4,6 +4,7 @@ import Card, { CardProps } from "@/app/components/Card";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import { Box } from "@mui/material";
 import profile from "@/app/profile";
+import Layout from "@/app/components/Layout";
 
 export default function Education({
   education = [],
@@ -37,4 +38,8 @@ export const getStaticProps: GetStaticProps<{
 }> = () => {
   const { education } = profile;
   return { props: { education } };
+};
+
+Education.getLayout = function getLayout(page: React.ReactElement) {
+  return <Layout title="Education">{page}</Layout>;
 };
