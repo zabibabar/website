@@ -71,6 +71,7 @@ const profile: Profile = {
         "TypeScript",
         "Angular",
         "React",
+        "Nextjs",
         "NgRx",
         "RxJS",
         "Redux",
@@ -86,7 +87,7 @@ const profile: Profile = {
     },
     {
       title: "Others",
-      details: ["Figma", "Git", "Kanban", "Scrum"],
+      details: ["Github Actions", "Figma", "Git", "Kanban", "Scrum"],
     },
   ],
   education: [
