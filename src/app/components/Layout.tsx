@@ -51,7 +51,7 @@ const Layout = ({ title, children }: LayoutProps) => {
                 src="/profile.png"
                 width={240}
                 height={240}
-                alt="Picture of the author"
+                alt="Picture of Zabi Babar"
               />
               <Typography
                 variant="h4"
@@ -86,7 +86,7 @@ const Layout = ({ title, children }: LayoutProps) => {
                 textAlign="center"
               >
                 Founder / Organizer of{" "}
-                <Link href="https://meetu.ps/c/521Cz/H7wgF/a" color="secondary">
+                <Link href="https://tampavolunteers.com/" color="secondary">
                   Tampa Volunteers
                 </Link>
               </Typography>

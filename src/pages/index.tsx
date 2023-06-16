@@ -22,7 +22,7 @@ export default function Home() {
       <p>
         Moreover, I give back to the community via volunteering. I organize a
         Meetup group called{" "}
-        <Link href="https://meetu.ps/c/521Cz/H7wgF/a" color="secondary">
+        <Link href="https://tampavolunteers.com/" color="secondary">
           Tampa Volunteers
         </Link>{" "}
         to share non-profit organizations I volunteer at with other members of
