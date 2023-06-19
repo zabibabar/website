@@ -47,9 +47,9 @@ const profile: Profile = {
       details: [
         "Designed database diagrams on LucidChart for an event management site.",
         "Created an API using Nestjs and Mongoose (MongoDB).",
-        "Secured the application using Auth0 in React, and JWT token validation in API",
+        "Secured the application using Auth0 in React, and JWT token validation in API.",
         "Implemented the UI in Angular using Material, RxJS, and NgRx.",
-        "Technologies Used: MongoDB, Nodejs, Nestjs, React, Redux, Material-UI, Redux-Observables, RxJS",
+        "Technologies Used: MongoDB, Nodejs, Nestjs, React, Redux, Material-UI, Redux-Observables, RxJS.",
       ],
     },
     {
@@ -57,9 +57,28 @@ const profile: Profile = {
       subtitle: "GitHub",
       subtitleLink: "https://github.com/zabibabar/covid-tracker/",
       details: [
-        "Created a MERN web application to graphically and numerically display the time series of coronavirus cases per country",
-        "Developed a REST API integrated with MongoDB to fetch JHU's coronavirus data",
-        "Technologies Used: MongoDB, Express, React, Node, Redux, Material-UI, Recharts",
+        "Created a MERN web application to graphically and numerically display the time series of coronavirus cases per country.",
+        "Developed a REST API integrated with MongoDB to fetch JHU's coronavirus data.",
+        "Technologies Used: MongoDB, Express, React, Node, Redux, Material-UI, Recharts.",
+      ],
+    },
+    {
+      title: "Personal Site (This Website)",
+      subtitle: "Link",
+      subtitleLink: "https://zabibabar.com/",
+      details: [
+        "I used React, Next.js, and Material UI for this project.",
+        "Deployed using Github Action and Github Pages.",
+      ],
+    },
+    {
+      title: "Tampa Volunteers",
+      subtitle: "Link",
+      subtitleLink: "https://tampavolunteers.com/",
+      details: [
+        "This website is for my Meetup Tampa Volunteers. https://www.meetup.com/tampa-volunteers/.",
+        "I used React, Next.js, and Material UI for this project.",
+        "Deployed using Github Action and Github Pages.",
       ],
     },
   ],
@@ -71,7 +90,7 @@ const profile: Profile = {
         "TypeScript",
         "Angular",
         "React",
-        "Nextjs",
+        "Next.js",
         "NgRx",
         "RxJS",
         "Redux",
@@ -83,11 +102,19 @@ const profile: Profile = {
     },
     {
       title: "Backend",
-      details: ["Node.js", "Nestjs", "MongoDB", "Mongoose", "SQL"],
+      details: [
+        "Node.js",
+        "Nestjs",
+        "MongoDB",
+        "Mongoose",
+        "SQL",
+        "AWS S3",
+        "AWS Lambda",
+      ],
     },
     {
       title: "Others",
-      details: ["Github Actions", "Figma", "Git", "Kanban", "Scrum"],
+      details: ["Github Actions", "AWS CDK", "Figma", "Git", "Kanban", "Scrum"],
     },
   ],
   education: [
@@ -101,7 +128,7 @@ const profile: Profile = {
         "GPA: 3.94/4.00",
       ],
       location: "Tampa, Florida",
-      duration: "Aug 2016 - Dec 2019",
+      duration: "2016 - 2019",
     },
   ],
 };
